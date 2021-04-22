@@ -9,7 +9,8 @@ selbständig anwenden, um Abfluss- und Niederschlagszeitreihen einiger ausgewäh
 [CAMELS-Dataset](./data/README.md) auszuwerten. Neben der Bestimmung von statistischen Kennwerten erfolgt außerdem die
 Analyse zeitlicher Trends der hydrologischen Messwerte. Die Auswertung erfolgt in einer selbst einzurichtenden Data
 Science Umgebung mit dem Python Paketmanager [conda](https://docs.conda.io/) und [Juypter Lab](https://jupyterlab.readthedocs.io/).
-Dabei sollen in einem Jupyter Notebook die Auswertungsergebnisse angemessen visualisiert, analysiert interpretiert werden.
+Dabei sollen in einem Jupyter Notebook die Auswertungsergebnisse angemessen visualisiert, analysiert und interpretiert
+werden. Nutzen Sie hierfür insbesondere die Möglichkeit zur Dokumentation via Markdown.
 
 ## Vorbereitung
 ### Einrichtung der Data Science Umgebung
@@ -31,14 +32,17 @@ diese tabellarisch dar.
 ### 2 Auswertung des zeitlichen Verlaufs von Messwerten
 Stellen Sie den zeitlichen Verlauf des Niederschlags innerhalb eines Jahres für jeweils 6 unterschiedliche Jahre grafisch
 dar. Nutzen Sie hierfür die Matplotlib Bibliothek und wählen Sie eine angemessene Form der Visualisierung. Führen Sie
-dasselbe für den Verlauf der Abflussmengen separat durch. Lassen sich Regelmäßigkeiten im zeitlichen Verlauf der Niederschlags-
-und Durchflussmengen innerhalb eines Jahres erkennen?
+dasselbe für den Verlauf der Abflussmengen separat durch.
+
+Lassen sich Regelmäßigkeiten im zeitlichen Verlauf der Niederschlags- und Durchflussmengen innerhalb eines Jahres erkennen?
 #### Optional
 Stellen Sie auf ähnliche Weise den zeitlichen Verlauf der Abflussmengen für 6 unterschiedliche Jahre in einer
 Summenlinie dar.
 ### 3 Intraannuelle Auswertung
 Ermitteln Sie für den gewählten Zeitraum die monatlichen Durchschnittswerte für Abfluss und Niederschlag und visualisieren Sie
-diese angemessen. Lassen sich monatliche Korrelationen zwischen den Niederschlags- und Abflussmengen erkennen?
+diese angemessen.
+
+Lassen sich monatliche Korrelationen zwischen den Niederschlags- und Abflussmengen erkennen?
 ### 4 Temporale Trendanalyse
 Untersuchen Sie, ob sich für den Abfluss im gewählten Einzugsgebiet sowie für den Temperatur- und Niederschlagsverlauf
 zeitliche Trends erkennen lassen. Führen Sie hierfür eine lineare Regression durch und visualisieren Sie die
@@ -61,6 +65,10 @@ würde dann in etwa wie folgt aussehen:
 
 Eine paarweise Korrelationsmatrix kann anschließend mit pandas erstellt werden
 (https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.corr.html).
-Stellen Sie den (möglichen) Zusammenhang zwischen Abfluss und dem Niederschlag vorangegangener Tage in jeweils einem
-Scatterplot dar.
 
+Stellen Sie außerdem den (möglichen) Zusammenhang zwischen Abfluss und dem Niederschlag vorangegangener Tage in jeweils
+einem Scatterplot dar.
+
+## Bereitstellung der Ergebnisse
+Erstellen Sie einen Fork dieses Repositories und laden Sie Ihre Ergebnisse (das Jupyter Notebook und. ggf eigene Python Skripte)
+in das geforkte Repository auf GitLab/GitHub.
