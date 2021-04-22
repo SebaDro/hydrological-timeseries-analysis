@@ -50,13 +50,15 @@ gemeinsam in einem Diagramm dar.
 Untersuchen Sie inwiefern die Abflussmengen eines Tages mit den Niederschlagssummen vorangegangener Tage korrelieren. Bereiten
 Sie hierfür die Niederschlags- und Abflusswerte eines wählbaren Zeitraums so auf, dass in einem DataFrame für jedes Datum
 jeweils der aktuelle Abflusswert sowie die Niederschlagswerte der vorangegangenen n-Tage aufgeführt werden. Der DataFrame
-würde dann in etwa wie folgt aussehen:
+würde dann in etwa wie folgt aussehen:  
+
 | date       | discharge | prec_actual | prec_offset_1 | prec_offset_2 | ... |
 |------------|-----------|-------------|---------------|---------------|-----|
 | 2015-01-01 | 99.0      | 0.75        | 0.45          | 0.87          | ... |
 | 2015-01-02 | 105.5     | 0.68        | 0.75          | 0.45          | ... |
 | 2015-01-03 | 103.3     | 0.54        | 0.68          | 0.75          | ... |
-| ...        | ...       | ...         | ...           | ...           |     |
+| ...        | ...       | ...         | ...           | ...           |     |  
+
 Eine paarweise Korrelationsmatrix kann anschließend mit pandas erstellt werden
 (https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.corr.html).
 Stellen Sie den (möglichen) Zusammenhang zwischen Abfluss und dem Niederschlag vorangegangener Tage in jeweils einem
