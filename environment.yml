@@ -1,0 +1,10 @@
+name: gi-projekt-ki
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - jupyterlab
+  - numpy
+  - pandas
+  - matplotlib
+  - scipy
