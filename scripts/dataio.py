@@ -43,7 +43,7 @@ def load_streamflow(path: str) -> pd.DataFrame:
         DataFrame containing DateTime indexed streamflow data for a basin
 
     """
-    df = pd.read_csv(path, delim_whitespace=True, header=None, decimal='.',
+    df = pd.read_csv(path, delim_whitespace=True, header=None, decimal='.', na_values=["-999.00"],
                      names=["gauge_id", "year", "month", "day", "streamflow", "qc_flag"])
     df["date"] = pd.to_datetime(df[["year", "month", "day"]])
     df = df.drop(columns=["year", "month", "day"]).set_index("date")
